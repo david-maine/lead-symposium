@@ -1,1 +1,1 @@
-# lead-symposium
+# symposium
