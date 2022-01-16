@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
 <head>
 <style>
 body {
   font-size: 28px;
+  background: #111224;
 }
 
 ul {
@@ -11,14 +12,15 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #111224;
+  background-color: transparent;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -50,10 +52,11 @@ li a:hover {
   margin-left: 40px;
 }
 .content{
+  margin-top: 0px;
+  padding-top: 0px;
   height: 500px;
-    border-style:solid;
-
-  border-color: black;
+  background-color: rgba(255,255,255,0.2);
+  color: white;
 }
 </style>
 </head>
@@ -67,28 +70,26 @@ li a:hover {
 </div>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a class="active" href="#About">About</a></li>
-  <li><a class="active" href="#Speakers">Speakers</a></li>
-  <li><a class="active" href="#Schedule">Schedule</a></li>
   <li><a class="active" href="#Register">Register</a></li>
+    <li><a class="active" href="#Schedule">Schedule</a></li>
+    <li><a class="active" href="#Speakers">Speakers</a></li>
+    <li><a class="active" href="#About">About</a></li>
+  <li><a class="active" href="#home">Home</a></li>
 
 </ul>
-
-
-<div class="content About">
+<div class="content About" id="About">
 <p>About</p>
 </div>
 
-<div class="content Speakers">
+<div class="content Speakers" id="Speakers">
 <p>Speakers</p>
 </div>
 
-<div class="content Schedule">
+<div class="content Schedule" id="Schedule">
 <p>Schedule</p>
 </div>
 
-<div class="content Register">
+<div class="content Register" id="Register">
 <p>Register</p>
 </div>
 </body>
