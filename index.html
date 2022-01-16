@@ -1,96 +1,226 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  font-size: 28px;
-  background: #111224;
-}
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-}
+        body {
+            font-size: 28px;
+            background: #111224;
+            text-align: center;
+        }
 
-li {
-  float: right;
-}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        }
 
-li a:hover {
-  background-color: #111;
-}
+        li {
+            float: right;
+        }
 
-.active {
-  background-color: #4CAF50;
-}
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-.header {
-  height: 450px;
-  background: #111224;
-  color: white;
-  background-image: url(https://www.plm.automation.siemens.com/media/global/de/Artificial-Intelligence-AI-Automotive-AT_tcm53-91268.jpg);
-  background-position:right;
-  background-repeat: no-repeat;
-}
-.title{
-  padding-top: 40px;
-  margin-left: 40px;
-}
-.content{
-  margin-top: 0px;
-  padding-top: 0px;
-  height: 500px;
-  background-color: rgba(255,255,255,0.2);
-  color: white;
-}
-</style>
+        li a:hover {
+            background-color: #111;
+        }
+
+        li a:active {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        .header {
+            height: 450px;
+            background: #111224;
+            color: white;
+            background-image: url(https://www.plm.automation.siemens.com/media/global/de/Artificial-Intelligence-AI-Automotive-AT_tcm53-91268.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .title {
+            text-align: left;
+            padding-top: 40px;
+            margin-left: 40px;
+        }
+
+        .section {
+            margin: 0 auto;
+            width: 90%;
+            height: 500px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: solid;
+            border-color: transparent;
+        }
+
+        .section-title {
+            text-align: left;
+            margin-left: 30px;
+            padding-top: 20px;
+        }
+
+        .about-content {
+            text-indent: 20px;
+            text-align: justify;
+            margin: 0 auto;
+            position: middle;
+            width: 80%;
+            font-size: 18px;
+            /*border: solid;*/
+            /*border-color: red;*/
+        }
+
+        .sp-container {
+            width: 100%;
+
+        }
+
+        .sp-each {
+            float: left;
+            width: 20%;
+            background-color: transparent;
+
+
+        }
+
+        .sp-file {
+            width: 80%;
+            background-image: url(https://www.nan-ye.com/yn.jpg
+            );
+            background-position: center center;
+            background-size: cover;
+            height: 400px;
+            margin: 0 auto;
+            border-radius: 25px;
+            border: solid;
+            border-color: aliceblue;
+        }
+
+        .sp-file:hover {
+            background-size: 190%;
+            background-position: center center;
+        }
+
+        .sp-name {
+            height: 70%;
+            text-align: left;
+            position:relative;
+        }
+
+        .name {
+            height: 80px;
+            position: absolute;
+            margin-left: 15px;
+            bottom: 0;
+        }
+
+        .sp-school {
+            height: 30%;
+            background-color: rgba(55, 23, 119, 1);
+            border-radius: 25px;
+        }
+    </style>
+
 </head>
 <body>
 
-<div class="header">
-  <div class="title">
-    <h1>SYMPOSIUM</h1>
-    <p>Machine learning and Decision Making: Theory, Algorithms and Applications.</p>
-  </div>
+<div class="header" id="home">
+    <div class="title">
+        <h1>SYMPOSIUM</h1>
+        <p style="color:#c393f2">Machine learning and Decision Making: Theory, Algorithms and Applications.</p>
+    </div>
 </div>
 
 <ul>
-  <li><a class="active" href="#Register">Register</a></li>
+    <li><a class="active" href="#Register">Register</a></li>
     <li><a class="active" href="#Schedule">Schedule</a></li>
     <li><a class="active" href="#Speakers">Speakers</a></li>
     <li><a class="active" href="#About">About</a></li>
-  <li><a class="active" href="#home">Home</a></li>
+    <li><a class="active" href="#home">Home</a></li>
 
 </ul>
-<div class="content About" id="About">
-<p>About</p>
+<div class="section About" id="About">
+    <p class="section-title">About this symposium</p>
+
+    <div class="about-content">Machine learning and decision making,
+        considered essential parts in artificial intelligence,
+        play anincreasingly important role in providing solutions to
+        complex problems in a broad range of domains.This includes
+        but is not limited to image recognition, self-driving
+        cars, virtual personal assistants,games and adaptive natural
+        resource management.Recently, the field has made significant advances
+        through an interplay of theory, algorithms andapplications.
+        For example, mathematical and statistical theories play a multi-faceted
+        role: poweringthe design, analysis and improvement of algorithms;
+        providing insights on when and why algorithmswork; constructing
+        guidelines on how to effectively apply algorithms in applications
+        from differentdisciplines. In addition, the emergence of challenging
+        applications stimulates the development of morepowerful algorithms and new
+        theories.This symposium calls for the participation of PhD students working
+        on the theory, algorithms andapplications in the field of machine learning and
+        decision making. It aims to bring together studentsfrom all related disciplines
+        to present their research to a wide audience, as well as to connect, interact,
+        and exchange ideas with other students. The symposium will include a series of
+        invited talks, tutorials,student contributed talks, and a number of events to
+        encourage discussion and collaboration betweenstudents.
+    </div>
 </div>
 
-<div class="content Speakers" id="Speakers">
-<p>Speakers</p>
+<div class="section Speakers" id="Speakers">
+    <p class="section-title">Invited talks</p>
+    <div class="sp-container">
+        <div class="sp-each">
+            <div class="sp-file sp1">
+                <div class="sp-name">
+                    <p class="name"> Nan <br> Ye</p>
+                </div>
+                <div class="sp-school"></div>
+            </div>
+        </div>
+        <div class="sp-each">
+            <div class="sp-file sp2"></div>
+        </div>
+        <div class="sp-each">
+            <div class="sp-file sp3"></div>
+        </div>
+        <div class="sp-each">
+            <div class="sp-file sp4"></div>
+        </div>
+        <div class="sp-each">
+            <div class="sp-file sp5"></div>
+        </div>
+
+    </div>
+
 </div>
 
-<div class="content Schedule" id="Schedule">
-<p>Schedule</p>
+<div class="section Schedule" id="Schedule">
+    <p class="section-title">Schedule</p>
 </div>
 
-<div class="content Register" id="Register">
-<p>Register</p>
+<div class="section Register" id="Register">
+    <p class="section-title">Register</p>
 </div>
 </body>
 </html>
