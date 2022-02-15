@@ -10,7 +10,7 @@ html {
             font-size: 28px;
             justify-content: center;
             text-align: center;
-            width: 1800px;
+            width: 1600px;
             margin: 0 auto;
             /*background: white url(https://lilianweng.github.io/lil-log/assets/images/RL_illustration.png) no-repeat fixed right;*/
             /*border: solid #111111;*/
@@ -29,7 +29,7 @@ html {
         .header {
             margin: 0 auto;
             padding-top: 150px;
-            width: 1600px;
+            width: 1400px;
             padding-left: 100px;
             position: fixed;
             top: 0;
@@ -94,8 +94,8 @@ html {
             padding-top: 20px;
             margin-bottom: 50px;
             top: -1px;
-            position: -webkit-sticky; /* Safari */
-            position: sticky;
+            /*position: -webkit-sticky; !* Safari *!*/
+            /*position: sticky;*/
             /*border-bottom: solid black 1px;*/
             z-index: 88;
         }
@@ -114,10 +114,12 @@ html {
         }
 
         .sp-container {
-            width: 100%;
+            width: 1600px;
+            padding-left: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            /*border: 1px black solid;*/
         }
 
         .card {
@@ -126,9 +128,9 @@ html {
             /*max-width: 20%;*/
             /*background-color: transparent;*/
             /*color: white;*/
-            /*border: 1px solid black;*/
+            border: 1px solid black;
             position: relative;
-            width: 300px;
+            width: 280px;
             height: 450px;
             margin: 20px;
             background-color: #1E75D9;
@@ -195,41 +197,7 @@ html {
     line-height: 30px;
 }
 
-        .sp-file {
-            width: 80%;
-            background-image: url(https://www.nan-ye.com/yn.jpg
-            );
-            background-position: center center;
-            background-size: cover;
-            height: 450px;
-            margin: 0 auto;
-            border-radius: 25px;
-            border: solid aliceblue;
-        }
 
-        .sp-file:hover {
-            background-size: 150%;
-            background-position: center center;
-        }
-
-        .sp-name {
-            height: 70%;
-            text-align: left;
-            position: relative;
-        }
-
-        .name {
-            font-size: 40px;
-            position: absolute;
-            padding-left: 15px;
-            bottom: 0;
-        }
-
-        .sp-school {
-            height: 30%;
-            background-color: #1E75D9;
-            border-radius: 0px 0px 25px 25px;
-        }
         .Schedule{
             justify-content: center;
             text-align: center;
