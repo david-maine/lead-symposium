@@ -1,263 +1,73 @@
 <!DOCTYPE html><!DOCTYPE html>
 <html>
 <head>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-size: 28px;
-            text-align: center;
-            width: 80%;
-            margin: 0 auto;
-            /*border: solid #111111;*/
-        }
-
-        .home {
-            height: 1px;
-            z-index: -9999;
-            background-color: transparent;
-        }
-
-        /* ul {
-            margin-top: 70vh;
-            list-style-type: none;
-            margin-right: 10vw;
-            padding: 0;
-            overflow: hidden;
-            background-color: transparent;
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            font-size: 1.3vw;
-            z-index: 9999;
-        } */
-
-        li {
-            margin-left: 0.1vw;
-            float: right;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 0.2vw 0.5vw;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: #111;
-        }
-
-        li a:active {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-
-        /* .header {
-            top: 0;
-            height: 70vh;
-            width: 80%;
-            position: fixed;
-            color: white;
-            background: white url(https://lilianweng.github.io/lil-log/assets/images/RL_illustration.png) no-repeat fixed center right 20%;
-            z-index: -1;
-            border: solid black;
-        } */
-
-        .title {
-            color: black;
-            text-align: left;
-            padding-top: 40px;
-            margin-left: 40px;
-            width: 50%;
-        }
-
-        .main {
-            background-color: #bee3ec;
-        }
-
-        .section {
-            margin: 0 auto;
-            height: auto;
-            background-color: #BEE3ECFF;
-            color: black;
-            /*border: solid transparent;*/
-        }
-
-        .section-title {
-            text-align: left;
-            margin-left: 30px;
-            padding-top: 20px;
-        }
-
-        .about-content {
-            text-indent: 20px;
-            text-align: justify;
-            margin: 0 auto;
-            width: 80%;
-            font-size: 18px;
-            /*border: solid;*/
-            /*border-color: red;*/
-        }
-
-        .sp-container {
-            width: 100%;
-
-        }
-
-        .sp-each {
-            float: left;
-            width: 20%;
-            background-color: transparent;
-            color: white;
-
-        }
-
-        .sp-file {
-            width: 80%;
-            /* background-image: url(https://www.nan-ye.com/yn.jpg); */
-            background-position: center center;
-            background-size: cover;
-            height: 18vw;
-            margin: 0 auto;
-            border-radius: 25px;
-            border: solid aliceblue;
-        }
-
-        .sp-file:hover {
-            background-size: 190%;
-            background-position: center center;
-        }
-
-        .sp-name {
-            height: 70%;
-            text-align: left;
-            position: relative;
-        }
-
-        .name {
-            font-size: 2vw;
-            position: absolute;
-            margin-left: 15px;
-            bottom: 0;
-        }
-
-        .sp-school {
-            height: 30%;
-            background-color: rgba(55, 23, 119, 1);
-            border-radius: 0px 0px 25px 25px;
-        }
-
-        table {
-            font-size: medium;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        ul {
-            font-size: medium;
-        }
-    </style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
 <div class="home" id="home"></div>
 <div class="header">
+    <div class="header-img"></div>
     <div class="title">
-        <h1>Machine learning and Decision Making: Theory, Algorithms and Applications.</h1>
+        <h1>Machine learning <br> and Decision Making: <br> <span>Theory, Algorithms and Applications.</span></h1>
     </div>
 </div>
 
-<!-- <ul>
-    <li><a class="active" href="#Register">Register</a></li>
-    <li><a class="active" href="#Schedule">Schedule</a></li>
-    <li><a class="active" href="#Speakers">Speakers</a></li>
-    <li><a class="active" href="#About">About</a></li>
-    <li><a class="active" href="#home">Home</a></li>
-</ul> -->
+<!--<ul>-->
+<!--    <li><a class="active" href="#Register">Register</a></li>-->
+<!--    <li><a class="active" href="#Schedule">Schedule</a></li>-->
+<!--    <li><a class="active" href="#Speakers">Speakers</a></li>-->
+<!--    <li><a class="active" href="#About">About</a></li>-->
+<!--    <li><a class="active" href="#home">Home</a></li>-->
 
-<div class="main">
+<!--</ul>-->
+
+<dl class="main">
     <div class="section About" id="About">
-        <p class="section-title">About this symposium</p>
+        <div class="section-title">About this symposium</div>
 
-        <div class="about-content">
-            Machine learning and decision making,
-            considered essential parts in artificial intelligence,
-            play an increasingly important role in providing solutions to
-            complex problems in a broad range of domains.This includes
-            but is not limited to image recognition, self-driving
-            cars, virtual personal assistants,games and adaptive natural
-            resource management.
+        <div class="about-content">Machine learning and decision making, considered essential parts in artificial intelligence, play an increasingly important role in providing solutions to complex problems in a broad range of domains.This includes but is not limited to image recognition, self-driving cars, virtual personal assistants,games and adaptive natural resource management.
             <br>
-            Recently, the field has made significant advances
-            through an interplay of theory, algorithms and applications.
-            For example, mathematical and statistical theories play a multi-faceted
-            role: powering the design, analysis and improvement of algorithms;
-            providing insights on when and why algorithms work; constructing
-            guidelines on how to effectively apply algorithms in applications
-            from different disciplines. In addition, the emergence of challenging
-            applications stimulates the development of more powerful algorithms and new
-            theories.
-            <br>
-            This symposium calls for the participation of PhD students working
-            on the theory, algorithms and applications in the field of machine learning and
-            decision making. It aims to bring together students from all related disciplines
-            to present their research to a wide audience, as well as to connect, interact,
-            and exchange ideas with other students. The symposium will include a series of
-            invited talks, tutorials,student contributed talks, and a number of events to
-            encourage discussion and collaboration between students.
+Recently, the field has made significant advances through an interplay of theory, algorithms and applications. For example, mathematical and statistical theories play a multi-faceted role: powering the design, analysis and improvement of algorithms; providing insights on when and why algorithms work; constructing guidelines on how to effectively apply algorithms in applications from different disciplines. In addition, the emergence of challenging applications stimulates the development of more powerful algorithms and new theories.
+            <br> This symposium calls for the participation of PhD students working on the theory, algorithms and applications in the field of machine learning and decision making. It aims to bring together students from all related disciplines to present their research to a wide audience, as well as to connect, interact, and exchange ideas with other students. The symposium will include a series of invited talks, tutorials,student contributed talks, and a number of events to encourage discussion and collaboration between students.
         </div>
     </div>
 
     <div class="section Speakers" id="Speakers">
         <p class="section-title">Invited talks</p>
         <div class="sp-container">
-            <div class="sp-each">
-                <div class="sp-file sp1">
-                    <div class="sp-name">
-                        <p class="name"> Nan <br> Ye</p>
-                    </div>
-                    <div class="sp-school"></div>
-                </div>
+            <div class="card">
+                <div class="photo"><img src="https://www.nan-ye.com/yn.jpg" alt=""></div>
+                    <h1>Nan Ye</h1>
+                    <h2></h2>
+                    <p>Lecturer (Statistics & Data Science)
+                        <br> School of Mathematics and Physics
+                        <br> University of Queensland</p>
             </div>
-            <div class="sp-each">
-                <div class="sp-file sp2">
-                    <div class="sp-name">
-                        <p class="name"> Hien <br> Duy Nguyen</p>
-                    </div>
-                    <div class="sp-school"></div>
-                </div>
+            <div class="card">
+                <div class="photo"><img src="https://www.nan-ye.com/yn.jpg" alt=""></div>
+                    <h1>Nan Ye</h1>
+                    <h2>UQ</h2>
+                    <p>Some descriptions</p>
             </div>
-            <div class="sp-each">
-                <div class="sp-file sp3">
-                    <div class="sp-name">
-                        <p class="name"> Marcus <br> Gallagher </p>
-                    </div>
-                    <div class="sp-school"></div>
-                </div>
+            <div class="card">
+                <div class="photo"><img src="https://www.nan-ye.com/yn.jpg" alt=""></div>
+                    <h1>Nan Ye</h1>
+                    <h2>UQ</h2>
+                    <p>Some descriptions</p>
             </div>
-            <div class="sp-each">
-                <div class="sp-file sp4">
-                    <div class="sp-name">
-                        <p class="name"> Hanna <br> Kurniawati </p>
-                    </div>
-                    <div class="sp-school"></div>
-                </div>
+            <div class="card">
+                <div class="photo"><img src="https://www.nan-ye.com/yn.jpg" alt=""></div>
+                    <h1>Nan Ye</h1>
+                    <h2>UQ</h2>
+                    <p>Some descriptions</p>
             </div>
-            <div class="sp-each">
-                <div class="sp-file sp5">
-                    <div class="sp-name">
-                        <p class="name"> Marcus <br> Hoerger </p>
-                    </div>
-                    <div class="sp-school"></div>
-                </div>
+            <div class="card">
+                <div class="photo"><img src="https://www.nan-ye.com/yn.jpg" alt=""></div>
+                    <h1>Nan Ye</h1>
+                    <h2>UQ</h2>
+                    <p>Some descriptions</p>
             </div>
 
         </div>
@@ -266,95 +76,129 @@
 
     <div class="section Schedule" id="Schedule">
         <p class="section-title">Schedule</p>
-        <p>Thursday 17th March</p>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Session</th>
-            </tr>
-            <tr>
-                <td>9:30 am - 9:40 am</td>
-                <td>Welcome and opening</td>
-            </tr>
-            <tr>
-                <td>9:40 am - 10:20 am</td>
-                <td>Invited Talk 1</td>
-            </tr>
-            <tr>
-                <td>10:20 am - 10:50 am</td>
-                <td>Morning Tea</td>
-            </tr>
-            <tr>
-                <td>10:50 am - 11:30 am</td>
-                <td>Invited Talk 2</td>
-            </tr>
-            <tr>
-                <td>11:30 am - 12:30 pm</td>
-                <td>Lunch</td>
-            </tr>
-            <tr>
-                <td>12:30 pm - 1:10 pm</td>
-                <td>Contributed Talks 1 and 2</td>
-            </tr>
-            <tr>
-                <td>1:10 pm - 1:50 pm</td>
-                <td>Contributed Talks 3 and 4</td>
-            </tr>
-            <tr>
-                <td>2:00 pm - 3:00 pm</td>
-                <td>Tutorial</td>
-            </tr>
-        </table>
+<table class="table" style="color:#38424D">
+                    <tbody>
+                        <tr>
+                            <th>Day 1 (Thursday, 17th March)</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>9:30am - 9:40am</td>
+                            <td>Welcome and opening</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>9:40am - 10:20am</td>
+                            <td>Invited talk 1: <strong>Speaker 1</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>10:20am - 10:50am</td>
+                            <td>Morning Tea</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>10:50am - 11:30am</td>
+                            <td>Invited talk 2: <strong>Speaker 2</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>11:30am - 12:30pm</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>12:30pm - 1:30pm</td>
+                            <td>Contributed Talks 1 and 2</td>
+                        </tr>
+						<tr>
+                            <th></th>
+                            <td>1:10pm - 1:50pm</td>
+                            <td>Contributed Talks 3 and 4</td>
+                        </tr>
+						<tr>
+                            <th></th>
+                            <td>2:00pm - 3:00pm</td>
+                            <td>Tutorial</td>
+                        </tr>
 
-        <p>Friday 18th March</p>
-        <table>
-            <tr>
-                <th>Time</th>
-                <th>Session</th>
-            </tr>
-            <tr>
-                <td>9:30 am - 9:40 am</td>
-                <td>Welcome and opening</td>
-            </tr>
-            <tr>
-                <td>9:40 am - 10:20 am</td>
-                <td>Invited Talk 3</td>
-            </tr>
-            <tr>
-                <td>10:20 am - 10:50 am</td>
-                <td>Morning Tea</td>
-            </tr>
-            <tr>
-                <td>10:50 am - 11:30 am</td>
-                <td>Invited Talk 4</td>
-            </tr>
-            <tr>
-                <td>11:30 am - 12:30 pm</td>
-                <td>Lunch</td>
-            </tr>
-            <tr>
-                <td>12:30 pm - 1:10 pm</td>
-                <td>Contributed Talks 1 and 2</td>
-            </tr>
-            <tr>
-                <td>1:10 pm - 1:50 pm</td>
-                <td>Contributed Talks 3 and 4</td>
-            </tr>
-            <tr>
-                <td>2:00 pm - 3:00 pm</td>
-                <td>Speed Presentations</td>
-            </tr>
-        </table>
+                        <tr>
+                            <th>Day 2 (Friday, 18th March)</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>9:30am - 9:40am</td>
+                            <td>Welcome and opening</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>9:40am - 10:20am</td>
+                            <td>Invited talk 3: <strong>Speaker 3</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>10:20am - 10:50am</td>
+                            <td>Morning Tea</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>10:50am - 11:30am</td>
+                            <td>Invited talk 4: <strong>Speaker 4</strong></td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>11:30am - 12:30pm</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <td>12:30pm - 1:30pm</td>
+                            <td>Contributed Talks 5 and 6</td>
+                        </tr>
+						<tr>
+                            <th></th>
+                            <td>1:10pm - 1:50pm</td>
+                            <td>Contributed Talks 7 and 8</td>
+                        </tr>
+						<tr>
+                            <th></th>
+                            <td>2:00pm - 3:00pm</td>
+                            <td>Speed Presentations</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
     </div>
 
     <div class="section Register" id="Register">
         <p class="section-title">Register</p>
-        <ul>
-            <li>We encourage all students with research interests in the field of machine learning to participate. To register please email d.maine@uqconnect.edu.au</li>
-            <li>We also invite students to present a contributed talk (20 mins) concerning their research or relevant topic. If interested in contributing a talk please include the title in your registration email.</li>
-        </ul>        
+        <div class="Register-content">
+            <p>We encourage all students with research interests in the field of machine learning to participate.
+            <br> To register please email d.maine@uqconnect.edu.auWe also invite students to present a contributed talk (20 mins) concerning their research or relevant topic.
+            <br> If interested in contributing a talk please include the title in your registration email.</p>
+        </div>
     </div>
-</div>
+
+    <div class="footer_about">
+                            <h4>Sponsors</h4>
+                            <p>This symposium is supported by MATRIX and AMSI.</p>
+    <br><br>
+                            <a>
+                                <img src="images\logo_matrix.png"
+                                     alt="logo" style="max-height:80px;padding:10px;">
+                            </a>
+                            <a>
+                                <img src="images\AMSI.jpeg"
+                                     alt="logo" style="max-height:80px;padding:10px">
+                            </a>
+                            <!-- <p>MATRIX is a residential research institute for the mathematical sciences in Australia.</p>
+                            <ul class="social">
+                                <li><a href="https://twitter.com/Matrix_Inst"><i class="lni lni-twitter-original"></i></a></li>
+                            </ul> -->
+    </div>
+</dl>
+
+
 
 </body>
 </html>
