@@ -175,14 +175,15 @@ html {
 }
 .card h1{
     position: absolute;
-    top: 370px;
+    top: 340px;
     transition: 0.5s;
+    font-size: 1.5em;
 }
 .card:hover h1{
     top: 170px;
 }
 .card h2{
-    margin-top: 220px;
+    margin-top: 250px;
     width: 80%;
     border-bottom: 1px solid rgba(255,255,255,0.3);
     font-size: 20px;
