@@ -63,7 +63,6 @@ html {
         }
 
         .main {
-            width: 100%;
             margin-top: 650px;
             background-color: #ffffff;
             /*border: 1px solid black;*/
@@ -238,9 +237,7 @@ html {
         }
 
         .footer_about{
-            width: 1600px;
             height: 300px;
-            padding-left: 100px;
             padding-top: 150px;
             /*border: 1px solid black;*/
         }
